@@ -17,6 +17,6 @@
     <dubbo:protocol name="dubbo" port="20880"/>
 
     <!--接口声明-->
-    <dubbo:service interface="com.mjia.service.DemoService" ref="demoService"/>
+    <dubbo:service interface="com.mjia.api.DemoService" ref="demoService" protocol="dubbo"/>
     <bean id="demoService" class="com.mjia.serviceimpl.DemoServiceImpl"/>
 </beans>
